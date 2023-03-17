@@ -3,15 +3,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue1"
+    android:background="@color/white"
     tools:context=".Charities">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Charity List"
-        android:textSize="30dp"
-        android:layout_gravity="center"/>
+        android:background="@color/blue1">
+
+        <RelativeLayout
+            android:id="@+id/charityHeaderBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/charityHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Charities"
+                android:textColor="@color/white"
+
+                android:textSize="20dp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
 
 </FrameLayout>

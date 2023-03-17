@@ -7,11 +7,29 @@
     tools:context=".Feed">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="News Feed"
-        android:textSize="30dp"
-        android:layout_gravity="center"/>
+        android:background="@color/blue1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/newsFeedHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="News Feed"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
 
 </FrameLayout>
