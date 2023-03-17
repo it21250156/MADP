@@ -3,15 +3,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue3"
+    android:background="@color/white"
     tools:context=".Profile">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="My Profile"
-        android:textSize="30dp"
-        android:layout_gravity="center"/>
+        android:background="@color/blue1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Profile"
+                android:layout_marginStart="16dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
 
 </FrameLayout>
