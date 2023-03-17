@@ -3,4 +3,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="ertrtt">helloo</string>
+    <string name="btnResetPW">Reset Password</string>
+    <string name="edt_mobileNo">0763302134</string>
+    <string name="tv_mobileNo">Mobile Number</string>
+    <string name="edt_email">janith@gmail.com</string>
+    <string name="tv_email">Email</string>
+    <string name="btneditprofile">Save Changes</string>
+    <string name="btn_donationhistory">My Donation History</string>
 </resources>

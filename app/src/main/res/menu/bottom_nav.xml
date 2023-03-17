@@ -3,14 +3,18 @@
 
     <item android:title="News Feed"
         android:id="@+id/feed"
-        android:icon="@drawable/feedicon"/>
+        android:icon="@drawable/feedicon"
+        />
     <item android:title="Charities"
         android:id="@+id/charities"
-        android:icon="@drawable/charityicon"/>
+        android:icon="@drawable/charityicon"
+        />
     <item android:title="Notifications"
         android:id="@+id/notifi"
-        android:icon="@drawable/notificationsicon"/>
+        android:icon="@drawable/notificationsicon"
+        />
     <item android:title="My Profile"
         android:id="@+id/profile"
-        android:icon="@drawable/profileicon"/>
+        android:icon="@drawable/profileicon"
+        />
 </menu>
