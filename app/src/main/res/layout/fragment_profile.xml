@@ -1,31 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".Profile">
 
     <!-- TODO: Update blank fragment layout -->
+
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/blue1">
+        android:background="@color/blue1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <RelativeLayout
+            android:id="@+id/profileHeaderBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/profileHeader"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
                 android:text="My Profile"
-                android:layout_marginStart="16dp"
-                android:textSize="20dp"
                 android:textColor="@color/white"
+                android:textSize="20dp" />
 
-                />
+            <ImageView
+                android:id="@+id/iv_profileicon"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_below="@+id/profileHeader"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/icon1"/>
+
+            <TextView
+                android:id="@+id/tv_profile_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_profileicon"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="Janith Chathuranga Withanagamage"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
+                android:shadowDx="4"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
 
         </RelativeLayout>
@@ -33,7 +64,95 @@
 
     </RelativeLayout>
 
+    <TextView
+        android:id="@+id/tv_profile_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="16dp"
+        android:text="@string/tv_email"
+        android:textColor="@color/blue1"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/edt_profile_email"
+        android:layout_width="378dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="@string/edt_email"
+        android:textColor="@color/blue3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_profile_email" />
+
+    <TextView
+        android:id="@+id/tv_profile_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="16dp"
+        android:text="@string/tv_mobileNo"
+        android:textColor="@color/blue1"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/edt_profile_email"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/edt_profile_mobile"
+        android:layout_width="378dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="@string/edt_mobileNo"
+        android:textColor="@color/blue3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_profile_mobile" />
+
+    <Button
+        android:id="@+id/btn_profile_editProfile"
+        android:layout_width="@dimen/btnWidth"
+        android:layout_height="@dimen/btnHeight"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/blue2"
+        android:text="@string/btneditprofile"
+        android:textColor="@color/blue3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_profile_mobile" />
+
+    <Button
+        android:id="@+id/btn_profile_resetpw"
+        android:layout_width="@dimen/btnWidth"
+        android:layout_height="@dimen/btnHeight"
+        android:backgroundTint="@color/red"
+        android:text="@string/btnResetPW"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_profile_editProfile" />
+
+    <Button
+        android:id="@+id/btn_profile_donationhistory"
+        android:layout_width="@dimen/btnWidthLong"
+        android:layout_height="@dimen/btnHeight"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@color/blue3"
+        android:text="@string/btn_donationhistory"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_profile_resetpw" />
 
 
-
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
