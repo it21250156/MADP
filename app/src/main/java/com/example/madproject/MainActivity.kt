@@ -1,7 +1,9 @@
 package com.example.madproject
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatDialogFragment
 import androidx.fragment.app.Fragment
 import com.example.madproject.databinding.ActivityMainBinding
@@ -12,31 +14,32 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        replaceFragment(Feed())
-
-        binding.bottomNavigationView.setOnItemSelectedListener {
-            when(it.itemId){
-                R.id.feed -> replaceFragment(Feed())
-                R.id.charities -> replaceFragment(Charities())
-                R.id.notifi -> replaceFragment(Notifications())
-                R.id.profile -> replaceFragment(Profile())
-
-                else -> {
-
-                }
-            }
-            true
-
-        }
+        setContentView(R.layout.activity_main)
 
     }
 
-    private fun replaceFragment(fragment: Fragment){
-        val fragmentManager = supportFragmentManager
-        val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.frameLayout,fragment)
-        fragmentTransaction.commit()
+    fun registeredCustomerHome(view: View){
+        val intent = Intent(this,CustomerMain::class.java)
+        startActivity(intent)
     }
+
+    fun loginInter(view: View){
+        val intent = Intent(this,LoginActivity2::class.java)
+        startActivity(intent)
+    }
+
+    fun signupInter(view: View){
+        val intent = Intent(this, SignupActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun resetPassword(view: View){
+        val intent = Intent (this, ResetPW::class.java)
+        startActivity(intent)
+    }
+
+
+
+
+
 }
