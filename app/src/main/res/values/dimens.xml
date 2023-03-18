@@ -3,4 +3,5 @@
     <dimen name="btnWidth">200dp</dimen>
     <dimen name="btnHeight">50dp</dimen>
     <dimen name="btnWidthLong">300dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>

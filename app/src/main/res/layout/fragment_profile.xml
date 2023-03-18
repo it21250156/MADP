@@ -139,7 +139,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_profile_editProfile" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_profile_editProfile"
+        android:onClick="resetPassword"/>
 
     <Button
         android:id="@+id/btn_profile_donationhistory"

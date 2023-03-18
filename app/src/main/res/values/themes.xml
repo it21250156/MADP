@@ -3,4 +3,13 @@
     <style name="Theme.MADProject" parent="Theme.MaterialComponents.DayNight.NoActionBar">
 
     </style>
+
+    <style name="Theme.MADProject.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MADProject.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MADProject.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
