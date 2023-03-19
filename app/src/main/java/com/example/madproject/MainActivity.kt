@@ -33,15 +33,12 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun resetPassword(view: View){
-        val intent = Intent (this, ResetPW::class.java)
-        startActivity(intent)
-    }
-
     fun adminHome(view: View){
         val intent = Intent(this, AdminHome::class.java)
         startActivity(intent)
     }
+
+
 
 
 
