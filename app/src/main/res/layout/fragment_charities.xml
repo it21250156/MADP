@@ -1,37 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".Charities">
 
-    <!-- TODO: Update blank fragment layout -->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/blue1">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="408dp"
+        android:layout_height="55dp"
+        android:background="#001A7A"
+        android:backgroundTint="#081D6C"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Categoryes of charity"
+        android:textColor="#F1E5E5"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <RelativeLayout
-            android:id="@+id/charityHeaderBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp">
+    <Button
+        android:id="@+id/button"
+        android:layout_width="258dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="116dp"
+        android:backgroundTint="#C2185B"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="@string/btn_view1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView9" />
 
-            <TextView
-                android:id="@+id/charityHeader"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="Charities"
-                android:textColor="@color/white"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="412dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#0286CF"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Educational charity"
+        android:textColor="#0B0A0A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="-3dp" />
 
-                android:textSize="20dp" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="411dp"
+        android:layout_height="48dp"
+        android:background="#0287D0"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Food Charity"
+        android:textColor="#171616"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:layout_editor_absoluteX="-2dp" />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="258dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#C2185B"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="@string/btn_view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
-        </RelativeLayout>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="412dp"
+        android:layout_height="48dp"
+        android:background="#0288D1"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Helth care charity"
+        android:textColor="#100F0F"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="258dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#C1185B"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="@string/btn_view3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
-    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="271dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="56dp"
+        android:foregroundGravity="center_vertical|center|center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:srcCompat="@drawable/foods" />
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="233dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="8dp"
+        android:foregroundGravity="center_vertical|center|center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/study" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="201dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:foregroundGravity="center_vertical|center|center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/health" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
