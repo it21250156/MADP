@@ -27,7 +27,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Signup"
+                android:text="Add Card Details"
                 android:id="@+id/tv_login"
                 android:textSize="30dp"
                 android:textAlignment="center"
@@ -37,66 +37,77 @@
                 android:paddingBottom="10dp"/>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Name"
-                android:paddingTop="16dp"
-                android:textColor="@color/blue1"
-                android:textStyle="bold">
-            </TextView>
-            <EditText
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:id="@+id/edtText_signup_name"
-                android:background="@drawable/customer_edittext"
-                android:drawablePadding="8dp"
-                android:padding="8dp"
+                android:layout_height="wrap_content"
+                android:text="Card Number"
                 android:textColor="@color/blue1"
-                android:textColorHighlight="@color/black"/>
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="16dp">
+            </TextView>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Email"
-                android:textColor="@color/blue1"
-                android:paddingTop="16dp"
-                android:textStyle="bold">
-            </TextView>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:id="@+id/edtText_signup_email"
+                android:id="@+id/edtText_card_cNo"
                 android:background="@drawable/customer_edittext"
                 android:drawablePadding="8dp"
                 android:padding="8dp"
                 android:textColor="@color/blue1"
                 android:textColorHighlight="@color/black"
-                android:inputType="textEmailAddress"/>
+                android:inputType="number"/>
 
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Mobile Number"
+                android:text="Expiry Date"
+                android:gravity="center"
                 android:textColor="@color/blue1"
                 android:paddingTop="16dp"
                 android:textStyle="bold">
             </TextView>
+
             <EditText
-                android:layout_width="match_parent"
+                android:id="@+id/edtText_card_exp"
+                android:layout_width="119dp"
                 android:layout_height="35dp"
-                android:id="@+id/edtText_signup_mobile"
                 android:background="@drawable/customer_edittext"
                 android:drawablePadding="8dp"
+                android:inputType="date"
                 android:padding="8dp"
                 android:textColor="@color/blue1"
                 android:textColorHighlight="@color/black"
-                android:inputType="phone"/>
+                android:layout_gravity="center"/>
+
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Password"
+                android:text="CVV"
+                android:gravity="center"
+                android:textColor="@color/blue1"
+                android:paddingTop="16dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <EditText
+                android:id="@+id/edtText_card_cvv"
+                android:layout_width="119dp"
+                android:layout_height="35dp"
+                android:background="@drawable/customer_edittext"
+                android:drawablePadding="8dp"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textColor="@color/blue1"
+                android:textColorHighlight="@color/black"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cardholder Name"
+                android:gravity="center"
                 android:textColor="@color/blue1"
                 android:paddingTop="16dp"
                 android:textStyle="bold">
@@ -112,38 +123,24 @@
                 android:textColorHighlight="@color/black"
                 android:inputType="textPassword"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Confirm Password"
-                android:textColor="@color/blue1"
-                android:paddingTop="16dp"
-                android:textStyle="bold">
-            </TextView>
-            <EditText
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:id="@+id/edtText_signup_confirmpassword"
-                android:background="@drawable/customer_edittext"
-                android:drawablePadding="8dp"
-                android:padding="8dp"
-                android:textColor="@color/blue1"
-                android:textColorHighlight="@color/black"
-                android:inputType="textPassword"/>
-
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
 
                 <Button
                     android:layout_width="@dimen/btnWidth"
                     android:layout_height="@dimen/btnHeight"
                     android:id="@+id/btn_signup"
-                    android:text="Register"
+                    android:text="Confirm"
                     android:textSize="14sp"
                     android:layout_marginTop="30dp"
                     android:backgroundTint="@color/blue3"
-                    android:layout_gravity="center">
+                    android:onClick="loginInter">
+
                 </Button>
 
-
+            </LinearLayout>
 
 
 
