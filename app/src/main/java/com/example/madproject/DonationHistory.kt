@@ -7,19 +7,18 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 
-class ResetPW : Fragment() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
 
-    }
+class DonationHistory : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_reset_p_w, container, false)
-        val hisBackBtn : Button = view.findViewById(R.id.btn_resetPWCanc)
+        val view = inflater.inflate(R.layout.fragment_donation_history, container, false)
+        val hisBackBtn : Button = view.findViewById(R.id.btn_his_back)
 
         hisBackBtn.setOnClickListener {
             val fragment = Profile()
@@ -28,6 +27,5 @@ class ResetPW : Fragment() {
         }
         return view
     }
-
 
 }

@@ -21,6 +21,7 @@
         android:theme="@style/Theme.MADProject"
         tools:targetApi="31">
         <activity
+
             android:name=".update_charity"
             android:exported="false" />
         <activity
@@ -31,6 +32,12 @@
             android:exported="false" />
         <activity
             android:name=".charity_admin"
+
+            android:name=".AdminHome"
+            android:exported="false" />
+        <activity
+            android:name=".cpwAct"
+
             android:exported="false" />
         <activity
             android:name=".LoginActivity2"

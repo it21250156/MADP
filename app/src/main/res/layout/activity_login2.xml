@@ -31,7 +31,7 @@
                 android:paddingBottom="10dp"
                 android:text="Login"
                 android:textAlignment="center"
-                android:textColor="@color/blue1"
+                android:textColor="@color/blue3"
                 android:textSize="30dp"
                 android:textStyle="bold" />
 
@@ -45,6 +45,7 @@
                 android:drawablePadding="8dp"
                 android:hint="Username"
                 android:padding="8dp"
+                android:textSize="14sp"
                 android:textColor="@color/blue1"
                 android:textColorHighlight="@color/black"
                 android:textColorHint="@color/blue1" />
@@ -57,6 +58,7 @@
                 android:background="@drawable/customer_edittext"
                 android:drawableLeft="@drawable/login_lock"
                 android:drawablePadding="8dp"
+                android:textSize="14sp"
                 android:hint="Password"
                 android:padding="8dp"
                 android:textColor="@color/blue1"
@@ -76,7 +78,7 @@
                     android:backgroundTint="@color/blue3"
                     android:onClick="registeredCustomerHome"
                     android:text="Login"
-                    android:textSize="18sp">
+                    android:textSize="14sp">
 
                 </Button>
 
