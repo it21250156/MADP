@@ -12,9 +12,9 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/blue1"
+        android:layout_width="match_parent"
+        android:layout_height="187dp"
+        android:background="@drawable/bd6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -24,23 +24,14 @@
             android:layout_height="wrap_content"
             android:padding="16dp">
 
-            <TextView
-                android:id="@+id/profileHeader"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="8dp"
-                android:text="My Profile"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
 
             <ImageView
                 android:id="@+id/iv_profileicon"
                 android:layout_width="wrap_content"
                 android:layout_height="110dp"
-                android:layout_below="@+id/profileHeader"
+
                 android:layout_marginTop="0dp"
-                android:src="@drawable/icon1"/>
+                android:src="@drawable/icon1" />
 
             <TextView
                 android:id="@+id/tv_profile_name"
@@ -49,12 +40,12 @@
                 android:layout_below="@+id/iv_profileicon"
                 android:layout_marginTop="0dp"
                 android:gravity="center"
-                android:text="Janith Chathuranga Withanagamage"
-                android:textColor="@color/white"
                 android:shadowColor="@color/black"
                 android:shadowDx="4"
                 android:shadowDy="2"
                 android:shadowRadius="5"
+                android:text="Janith Chathuranga Withanagamage"
+                android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
@@ -71,7 +62,7 @@
         android:layout_marginTop="16dp"
         android:paddingLeft="16dp"
         android:text="@string/tv_email"
-        android:textColor="@color/blue1"
+        android:textColor="@color/blue3"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
@@ -97,7 +88,7 @@
         android:layout_marginTop="16dp"
         android:paddingLeft="16dp"
         android:text="@string/tv_mobileNo"
-        android:textColor="@color/blue1"
+        android:textColor="@color/blue3"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/edt_profile_email"
