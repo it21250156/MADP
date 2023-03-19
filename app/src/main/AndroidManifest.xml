@@ -39,13 +39,12 @@
             android:exported="false" />
         <activity
             android:name=".charity_admin"
+            android:exported="false" />
 
+        <activity
             android:name=".AdminHome"
             android:exported="false" />
-        <activity
-            android:name=".cpwAct"
 
-            android:exported="false" />
         <activity
             android:name=".LoginActivity2"
             android:exported="false" />

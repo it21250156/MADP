@@ -15,4 +15,9 @@ class AdminHome : AppCompatActivity() {
         val intent = Intent(this, AdminPostListActivity::class.java)
         startActivity(intent)
     }
+
+    fun adminCharity(view: View){
+        val intent = Intent(this,edu_charity_admin::class.java)
+        startActivity(intent)
+    }
 }
