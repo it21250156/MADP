@@ -145,17 +145,27 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center_horizontal">
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
 
                 <Button
                     android:layout_width="@dimen/btnWidth"
                     android:layout_height="@dimen/btnHeight"
-                    android:id="@+id/btn_signup"
+                    android:id="@+id/btn_pay_confirm"
                     android:text="Confirm"
                     android:textSize="14sp"
                     android:layout_marginTop="30dp"
-                    android:backgroundTint="@color/blue3"
-                    android:onClick="loginInter">
+                    android:backgroundTint="@color/blue3">
+
+                </Button>
+
+                <Button
+                    android:layout_width="@dimen/btnWidth"
+                    android:layout_height="@dimen/btnHeight"
+                    android:id="@+id/btn_pay_cancel"
+                    android:text="Cancel"
+                    android:textSize="14sp"
+                    android:backgroundTint="@color/blue1">
 
                 </Button>
 

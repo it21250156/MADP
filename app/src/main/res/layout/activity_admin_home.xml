@@ -34,7 +34,8 @@
         android:text="Charities"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        android:onClick="adminCharity">
 
     </Button>
 
@@ -52,17 +53,17 @@
 
     </Button>
 
-    <Button
-        android:id="@+id/btn_admin_users"
-        android:layout_width="@dimen/btnWidthLong"
-        android:layout_height="@dimen/btnHeight"
-        android:text="Users"
-        android:layout_margin="40dp"
-        android:backgroundTint="@color/blue1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_admin_posts">
+<!--    <Button-->
+<!--        android:id="@+id/btn_admin_users"-->
+<!--        android:layout_width="@dimen/btnWidthLong"-->
+<!--        android:layout_height="@dimen/btnHeight"-->
+<!--        android:text="Users"-->
+<!--        android:layout_margin="40dp"-->
+<!--        android:backgroundTint="@color/blue1"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_admin_posts">-->
 
-    </Button>
+<!--    </Button>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
