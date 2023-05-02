@@ -36,7 +36,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/edtText_logon_username"
+                android:id="@+id/edtText_login_username"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="40dp"
@@ -51,7 +51,7 @@
                 android:textColorHint="@color/blue1" />
 
             <EditText
-                android:id="@+id/edtText_logon_password"
+                android:id="@+id/edtText_login_password"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
