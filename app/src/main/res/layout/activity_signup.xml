@@ -144,7 +144,7 @@
             <Button
                     android:layout_width="@dimen/btnWidth"
                     android:layout_height="@dimen/btnHeight"
-                    android:id="@+id/btn_signup"
+                    android:id="@+id/btn_signup_register"
                     android:text="Register"
                     android:textSize="14sp"
                     android:layout_marginTop="30dp"
