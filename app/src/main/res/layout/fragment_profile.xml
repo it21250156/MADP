@@ -111,7 +111,7 @@
         android:id="@+id/btn_profile_editProfile"
         android:layout_width="@dimen/btnWidth"
         android:layout_height="@dimen/btnHeight"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="36dp"
         android:backgroundTint="@color/blue2"
         android:text="@string/btneditprofile"
         android:textColor="@color/blue3"
@@ -134,10 +134,24 @@
         android:onClick="resetPassword"/>
 
     <Button
+        android:id="@+id/btn_profile_logout"
+        android:layout_width="108dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/red"
+        android:onClick="resetPassword"
+        android:text="Logout"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_profile_donationhistory" />
+
+    <Button
         android:id="@+id/btn_profile_donationhistory"
         android:layout_width="@dimen/btnWidthLong"
         android:layout_height="@dimen/btnHeight"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="12dp"
         android:backgroundTint="@color/blue3"
         android:text="@string/btn_donationhistory"
         android:textColor="@color/white"

@@ -1,21 +1,20 @@
 package com.example.madproject
 
+
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
-import android.view.View.OnClickListener
 import android.view.ViewGroup
 import android.widget.Button
-import androidx.fragment.app.FragmentTransaction
-import androidx.navigation.NavController
-import androidx.navigation.Navigation
-import java.io.FileDescriptor
-import java.io.PrintWriter
+import com.google.firebase.auth.FirebaseAuth
+
 
 
 class Profile : Fragment() {
+
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -37,6 +36,26 @@ class Profile : Fragment() {
             transaction?.replace(R.id.fl_nav,fragment2)?.commit()
         }
         return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        auth = FirebaseAuth.getInstance()
+
+        val profileLogoutBtn: Button = view.findViewById(R.id.btn_profile_logout)
+
+        profileLogoutBtn.setOnClickListener {
+        //logout from firebase
+            auth.signOut()
+
+            //back to login page
+            val intent = Intent(activity, LoginActivity2::class.java)
+            startActivity(intent)
+
+            //to prevent user from going back
+            activity?.finish()
+        }
     }
 
 
