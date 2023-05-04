@@ -53,7 +53,19 @@
 
     </Button>
 
-<!--    <Button-->
+    <Button
+        android:id="@+id/btn_admin_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_admin_posts"
+        app:layout_constraintVertical_bias="0.797" />
+
+    <!--    <Button-->
 <!--        android:id="@+id/btn_admin_users"-->
 <!--        android:layout_width="@dimen/btnWidthLong"-->
 <!--        android:layout_height="@dimen/btnHeight"-->
