@@ -118,8 +118,9 @@
             android:layout_marginTop="30dp"
             android:backgroundTint="@color/blue3"
             android:text="Create Post"
-            android:textSize="14sp"
-            android:onClick="backToPosts">
+            android:textSize="14sp">
+<!--            android:onClick="backToPosts">-->
+
 
         </Button>
 
