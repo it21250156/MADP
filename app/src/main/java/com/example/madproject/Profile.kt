@@ -98,14 +98,21 @@ class Profile : Fragment() {
             "mobile_number" to newMobileNo
         ) as MutableMap<String, Any>
 
-        // update database with new data
-        userDocumentRef.update(newData)
-            .addOnSuccessListener {
-                Toast.makeText(context, "Profile updated successfully", Toast.LENGTH_SHORT).show()
+        currentUser?.updateEmail(newEmail)
+            ?.addOnSuccessListener {
+                // update database with new data
+                userDocumentRef.update(newData)
+                    .addOnSuccessListener {
+                        Toast.makeText(context, "Profile updated successfully", Toast.LENGTH_SHORT).show()
+                    }
+                    .addOnFailureListener{ e ->
+                        Log.e(TAG, "Error updating user data")
+                        Toast.makeText(context, "Failed to update profile", Toast.LENGTH_SHORT).show()
+                    }
             }
-            .addOnFailureListener{ e ->
-                Log.e(TAG, "Error updating user data")
-                Toast.makeText(context, "Failed to update profile", Toast.LENGTH_SHORT).show()
+            ?.addOnFailureListener { e ->
+                Log.e(TAG, "Error updating email in Firebase Authentication", e)
+                Toast.makeText(context, "Failed to update email in Firebase Authentication", Toast.LENGTH_SHORT).show()
             }
     }
 
