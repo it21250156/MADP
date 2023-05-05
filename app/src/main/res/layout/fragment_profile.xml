@@ -44,10 +44,24 @@
                 android:shadowDx="4"
                 android:shadowDy="2"
                 android:shadowRadius="5"
-                android:text="Janith Chathuranga Withanagamage"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_profile_deleteacc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/iv_profileicon"
+                android:layout_alignEnd="@+id/iv_profileicon"
+                android:layout_alignBottom="@+id/iv_profileicon"
+                android:layout_marginStart="243dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="62dp"
+                android:backgroundTint="@color/red"
+                android:onClick="resetPassword"
+                android:text="Delete User"
+                android:textColor="@color/white" />
 
 
         </RelativeLayout>
@@ -74,7 +88,6 @@
         android:layout_height="49dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="@string/edt_email"
         android:textColor="@color/blue3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"
@@ -92,7 +105,7 @@
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/edt_profile_email"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="0dp" />
 
     <EditText
         android:id="@+id/edt_profile_mobile"
@@ -100,7 +113,6 @@
         android:layout_height="49dp"
         android:ems="10"
         android:inputType="phone"
-        android:text="@string/edt_mobileNo"
         android:textColor="@color/blue3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"
@@ -108,41 +120,57 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_profile_mobile" />
 
     <Button
-        android:id="@+id/btn_profile_editProfile"
-        android:layout_width="@dimen/btnWidth"
+        android:id="@+id/btn_profile_resetpw"
+        android:layout_width="185dp"
         android:layout_height="@dimen/btnHeight"
-        android:layout_marginTop="60dp"
-        android:backgroundTint="@color/blue2"
-        android:text="@string/btneditprofile"
-        android:textColor="@color/blue3"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="@color/blue1"
+        android:onClick="resetPassword"
+        android:text="@string/btnResetPW"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_profile_editProfile"
+        app:layout_constraintTop_toBottomOf="@+id/edt_profile_mobile" />
+
+    <Button
+        android:id="@+id/btn_profile_editProfile"
+        android:layout_width="@dimen/btnWidthSmall"
+        android:layout_height="@dimen/btnHeight"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/blue3"
+        android:text="@string/btneditprofile"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_profile_mobile" />
 
     <Button
-        android:id="@+id/btn_profile_resetpw"
+        android:id="@+id/btn_profile_logout"
         android:layout_width="@dimen/btnWidth"
         android:layout_height="@dimen/btnHeight"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/red"
-        android:text="@string/btnResetPW"
+        android:onClick="resetPassword"
+        android:text="Logout"
         android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_profile_editProfile"
-        android:onClick="resetPassword"/>
+        app:layout_constraintTop_toBottomOf="@+id/btn_profile_donationhistory" />
 
     <Button
         android:id="@+id/btn_profile_donationhistory"
         android:layout_width="@dimen/btnWidthLong"
         android:layout_height="@dimen/btnHeight"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="48dp"
         android:backgroundTint="@color/blue3"
         android:text="@string/btn_donationhistory"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_profile_resetpw" />
 

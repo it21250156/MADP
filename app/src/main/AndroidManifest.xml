@@ -40,14 +40,18 @@
         <activity
             android:name=".charity_admin"
             android:exported="false" />
-
         <activity
             android:name=".AdminHome"
             android:exported="false" />
-
         <activity
             android:name=".LoginActivity2"
-            android:exported="false" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".SignupActivity"
             android:exported="false" />
@@ -55,37 +59,9 @@
             android:name=".CustomerMain"
             android:exported="false" />
         <activity
-            android:name=".loginActivity"
-            android:banner="@drawable/app_icon_your_company"
-            android:exported="false"
-            android:icon="@drawable/app_icon_your_company"
-            android:label="@string/title_activity_login"
-            android:logo="@drawable/app_icon_your_company"
-            android:screenOrientation="landscape"
-            android:theme="@style/Theme.MADProject.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".DetailsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PlaybackActivity"
-            android:exported="false" />
-        <activity
-            android:name=".BrowseErrorActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
