@@ -85,8 +85,7 @@ class SignupActivity : AppCompatActivity() {
                         val userMap = hashMapOf(
                             "name" to inputName,
                             "email" to inputEmail,
-                            "mobile_number" to inputMobileNum,
-                            "password" to inputPassword
+                            "mobile_number" to inputMobileNum
                         )
                         firestore.collection("users")
                             .document(user!!.uid)
