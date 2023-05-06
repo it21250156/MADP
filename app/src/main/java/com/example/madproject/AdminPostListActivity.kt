@@ -53,6 +53,19 @@ class AdminPostListActivity : AppCompatActivity() {
                     val pAdapter=postadapter(poslist)
                     appRecyclerview.adapter=pAdapter
 
+                    pAdapter.setonclicklistner(object :postadapter.OnItemClickListener{
+                        override fun onItemclick(position: Int) {
+                            val intent=Intent(this@AdminPostListActivity,AdminpostdetailsActivity::class.java)
+
+                            intent.putExtra("titleid",poslist[position].titleid)
+                            intent.putExtra("title",poslist[position].title)
+                            intent.putExtra("cName",poslist[position].charityName)
+                            intent.putExtra("descript",poslist[position].description)
+                        startActivity(intent)
+                        }
+
+                    })
+
                     appRecyclerview.visibility=View.VISIBLE
 
 

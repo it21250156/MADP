@@ -21,14 +21,21 @@
         android:theme="@style/Theme.MADProject"
         tools:targetApi="31">
         <activity
-
+            android:name=".update_post"
+            android:exported="false" />
+        <activity
+            android:name=".AdminpostdetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".postdetailsactivity"
+            android:exported="false" />
+        <activity
             android:name=".AdminPostForm"
             android:exported="false" />
         <activity
             android:name=".AdminPostListActivity"
             android:exported="false" />
         <activity
-
             android:name=".update_charity"
             android:exported="false" />
         <activity
@@ -60,9 +67,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>
