@@ -1,10 +1,14 @@
 package com.example.madproject
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.core.content.ContextCompat
+import androidx.core.content.ContextCompat.startActivity
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -26,11 +30,12 @@ class AdminPostForm : AppCompatActivity() {
         description = findViewById(R.id.edtText_admin_postDes)
         btnAdd = findViewById(R.id.btn_btn_admin_add_post) // Add this line to initialize btnAddCategory
 
-        dbRef = FirebaseDatabase.getInstance().getReference("adminfo")
+        dbRef = FirebaseDatabase.getInstance().getReference("posts")
 
         btnAdd.setOnClickListener{
             saveformData()
         }
+
 
     }
 
@@ -63,14 +68,17 @@ class AdminPostForm : AppCompatActivity() {
             cName.text.clear()
             description.text.clear()
 
+
+
         }.addOnFailureListener { err ->
             Toast.makeText(this,"Error ${err.message}", Toast.LENGTH_SHORT).show()
         }
 
     }
+    fun backToPosts(view: View){
+        val intent= Intent(this,AdminPostListActivity::class.java)
+        startActivity(intent)
+    }
 }
-//    fun backToPosts(view: View){
-//        val intent = Intent(this,AdminPostListActivity::class.java)
-//        startActivity(intent)
-//    }
+
 
