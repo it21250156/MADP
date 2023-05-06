@@ -24,11 +24,11 @@ class CardDetails : Fragment() {
             transaction?.replace(R.id.fl_nav,fragment)?.commit()
         }
 
-        backToCharityBtn.setOnClickListener {
-            val fragment2 = select_charity()
-            val transaction = fragmentManager?.beginTransaction()
-            transaction?.replace(R.id.fl_nav,fragment2)?.commit()
-        }
+//        backToCharityBtn.setOnClickListener {
+//            val fragment2 = selected_charity()
+//            val transaction = fragmentManager?.beginTransaction()
+//            transaction?.replace(R.id.fl_nav,fragment2)?.commit()
+//        }
 
         return view
     }

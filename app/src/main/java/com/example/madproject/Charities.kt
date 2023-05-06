@@ -29,7 +29,13 @@ class Charities : Fragment() {
         val eduBtn : Button = view.findViewById(R.id.btn_chari_view1)
 
         eduBtn.setOnClickListener {
-            val fragment = educational_charity_list()
+            val fragment = Educational_charity_list()
+            val transaction = fragmentManager?.beginTransaction()
+            transaction?.replace(R.id.fl_nav,fragment)?.commit()
+        }
+
+        eduBtn.setOnClickListener {
+            val fragment = Educational_charity_list()
             val transaction = fragmentManager?.beginTransaction()
             transaction?.replace(R.id.fl_nav,fragment)?.commit()
         }

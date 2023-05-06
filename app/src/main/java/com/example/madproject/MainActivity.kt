@@ -16,6 +16,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+
     }
 
     fun registeredCustomerHome(view: View){
@@ -35,6 +37,11 @@ class MainActivity : AppCompatActivity() {
 
     fun adminHome(view: View){
         val intent = Intent(this, AdminHome::class.java)
+        startActivity(intent)
+    }
+
+    fun createCharity(view: View){
+        val intent = Intent(this, Add_new_chariti::class.java)
         startActivity(intent)
     }
 

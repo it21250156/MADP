@@ -24,7 +24,7 @@
 
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/etcharityName"
         android:layout_width="385dp"
         android:layout_height="40dp"
         android:ems="10"
@@ -34,7 +34,7 @@
         tools:layout_editor_absoluteY="84dp" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/etcharityEmail"
         android:layout_width="379dp"
         android:layout_height="58dp"
         android:layout_marginTop="40dp"
@@ -43,10 +43,10 @@
         android:text="Email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone2" />
+        app:layout_constraintTop_toBottomOf="@+id/etcharityContact" />
 
     <EditText
-        android:id="@+id/editTextPhone2"
+        android:id="@+id/etcharityContact"
         android:layout_width="377dp"
         android:layout_height="48dp"
         android:layout_marginTop="44dp"
@@ -56,10 +56,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.427"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPostalAddress2" />
+        app:layout_constraintTop_toBottomOf="@+id/etcharityAddress" />
 
     <EditText
-        android:id="@+id/editTextTextPostalAddress2"
+        android:id="@+id/etcharityAddress"
         android:layout_width="385dp"
         android:layout_height="44dp"
         android:layout_marginTop="44dp"
@@ -69,46 +69,46 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.384"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+        app:layout_constraintTop_toBottomOf="@+id/etcharityName" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/editTextTextPersonName5"-->
+<!--        android:layout_width="384dp"-->
+<!--        android:layout_height="46dp"-->
+<!--        android:layout_marginTop="44dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:text="Title"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.481"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />-->
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
-        android:layout_width="384dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="44dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Title"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/etcharityDescription"
         android:layout_width="373dp"
         android:layout_height="42dp"
         android:layout_marginTop="44dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Upload Images"
+        android:text="Description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+        app:layout_constraintTop_toBottomOf="@+id/etcharityEmail" />
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_edu_update_back"-->
+<!--        android:layout_width="215dp"-->
+<!--        android:layout_height="41dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:backgroundTint="#C2185B"-->
+<!--        android:text="@string/btn_back4"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_edu_submit" />-->
 
     <Button
-        android:id="@+id/button21"
-        android:layout_width="215dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#C2185B"
-        android:text="@string/btn_back4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button22" />
-
-    <Button
-        android:id="@+id/button22"
+        android:id="@+id/btn_edu_submit"
         android:layout_width="220dp"
         android:layout_height="39dp"
         android:layout_marginTop="12dp"
@@ -117,6 +117,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+        app:layout_constraintTop_toBottomOf="@+id/etcharityDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

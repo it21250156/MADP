@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Educational_charity_list">
+    tools:context=".Edu_charity_admin_list">
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
@@ -34,7 +34,7 @@
                     android:layout_marginStart="16dp"
                     android:textStyle="bold"
                     android:text="EDUCATION"
-                    android:textColor="@color/white"
+                    android:textColor="@color/blue2"
                     android:textSize="25dp" />
             </LinearLayout>
 
@@ -45,7 +45,7 @@
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_edu_chariti_list"
+        android:id="@+id/rv_edu_chariti_admin_list"
         android:layout_width="369dp"
         android:layout_height="496dp"
         android:layout_marginTop="16dp"

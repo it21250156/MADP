@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".add_new_chariti">
+    tools:context=".Add_new_chariti">
 
     <RelativeLayout
         android:id="@+id/relativeLayout2"
@@ -129,6 +129,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
+            android:text="Description"
+            android:textColor="@color/blue1"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/edtText_admin_char_description"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/customer_edittext"
+            android:drawablePadding="8dp"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="@color/blue1"
+            android:textColorHighlight="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
             android:text="Upload Image"
             android:textColor="@color/blue1"
             android:textStyle="bold"></TextView>
@@ -138,7 +157,7 @@
             android:layout_width="70dp"
             android:layout_height="50dp"
             app:layout_constraintStart_toEndOf="@+id/textView13"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6"
+            app:layout_constraintTop_toBottomOf="@+id/etcharityDescription"
             app:srcCompat="@drawable/baseline_image_24" />
 
 

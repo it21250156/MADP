@@ -29,7 +29,7 @@ class AdminHome : AppCompatActivity() {
     }
 
     fun adminCharity(view: View){
-        val intent = Intent(this,edu_charity_admin::class.java)
+        val intent = Intent(this,Charity_admin::class.java)
         startActivity(intent)
     }
 
