@@ -3,19 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+
     android:layout_height="match_parent"
     tools:context=".AdminpostdetailsActivity">
 
     <Button
         android:id="@+id/btnpostdetUpdate"
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:shadowColor="@color/red"
+
         android:text="Update"
+        android:textColor="#EEFFFFFF"
         app:layout_constraintEnd_toStartOf="@+id/btnpostDelete"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        app:rippleColor="#B51E1E"
+        app:strokeColor="#B81A1A" />
 
     <Button
         android:id="@+id/btnpostDelete"
@@ -23,6 +30,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="Delete"
+        android:textColorHighlight="#A51010"
+        android:textColorHint="#C51C1C"
+        android:textColorLink="#BC1D1D"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnpostdetUpdate"

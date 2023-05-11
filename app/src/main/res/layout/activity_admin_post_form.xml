@@ -33,6 +33,7 @@
         android:layout_gravity="center_horizontal"
         android:orientation="vertical"
         android:padding="24dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
 
 
@@ -101,14 +102,12 @@
             android:textColor="@color/blue1"
             android:textStyle="bold"></TextView>
 
-        <ImageView
-            android:id="@+id/iv_admin_post_img"
-            android:layout_width="70dp"
-            android:layout_height="50dp"
-            app:layout_constraintStart_toEndOf="@+id/textView13"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6"
-            app:srcCompat="@drawable/baseline_image_24" />
 
+        <ImageButton
+            android:id="@+id/imageup"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/baseline_image_24" />
 
         <Button
             android:id="@+id/btn_btn_admin_add_post"
@@ -119,7 +118,7 @@
             android:backgroundTint="@color/blue3"
             android:text="Create Post"
             android:textSize="14sp">
-<!--            android:onClick="backToPosts">-->
+            <!--            android:onClick="backToPosts">-->
 
 
         </Button>
@@ -130,10 +129,10 @@
             android:layout_height="@dimen/btnHeight"
             android:layout_gravity="center"
             android:backgroundTint="@color/blue2"
+            android:onClick="backToPosts"
             android:text="Cancel"
             android:textColor="@color/black"
-            android:textSize="14sp"
-            android:onClick="backToPosts">
+            android:textSize="14sp">
 
         </Button>
 
