@@ -44,7 +44,7 @@ class AdminpostdetailsActivity : AppCompatActivity() {
         val dbref=FirebaseDatabase.getInstance().getReference("posts").child(id)
         val mtask=dbref.removeValue()
 mtask.addOnSuccessListener {
-    Toast.makeText(this,"employee data deleted",Toast.LENGTH_LONG).show()
+    Toast.makeText(this,"post deleted",Toast.LENGTH_LONG).show()
 
     val intent=Intent(this,AdminPostListActivity::class.java)
     finish()
@@ -94,7 +94,7 @@ mtask.addOnSuccessListener {
         cname.setText(intent.getStringExtra("cName").toString())
         descript.setText(intent.getStringExtra("descript").toString())
 
-        pdialog.setTitle("Updating $titles Record")
+      //  pdialog.setTitle("Updating $titles Record")
 
         val alertDialog = pdialog.create()
         alertDialog.show()

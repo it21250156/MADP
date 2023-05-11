@@ -39,6 +39,7 @@ class AdminPostForm : AppCompatActivity() {
 
     }
 
+
     private fun saveformData(){
 
 //getting values
@@ -55,6 +56,7 @@ class AdminPostForm : AppCompatActivity() {
         }
         if(descript.isEmpty()){
             description.error = "Please enter Amount"
+            return
         }
 
         val titleid= dbRef.push().key!!

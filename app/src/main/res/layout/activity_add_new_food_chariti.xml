@@ -132,7 +132,7 @@
             android:background="@drawable/customer_edittext"
             android:backgroundTint="#FEFEFE"
             android:drawablePadding="8dp"
-            android:inputType="text"
+            android:inputType="text|textEmailAddress"
             android:padding="8dp"
             android:textColor="@color/blue1"
             android:textColorHighlight="@color/black" />
