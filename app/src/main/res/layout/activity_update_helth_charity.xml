@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#CADCF1"
-    tools:context=".update_charity">
+    tools:context=".update_helth_charity">
+
 
     <RelativeLayout
         android:id="@+id/relativeLayout2"
@@ -28,13 +29,15 @@
     </RelativeLayout>
 
     <ImageView
-        android:layout_width="69dp"
-        android:layout_height="128dp"
-        android:src="@drawable/baseline_school_24"></ImageView>
+        android:layout_width="76dp"
+        android:layout_height="133dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:src="@drawable/baseline_health_and_safety_24"></ImageView>
 
 
     <EditText
-        android:id="@+id/etfoodcharityName"
+        android:id="@+id/ethelthcharityName"
         android:layout_width="385dp"
         android:layout_height="40dp"
         android:layout_marginStart="24dp"
@@ -49,51 +52,51 @@
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
 
     <EditText
-        android:id="@+id/etfoodcharityEmail"
+        android:id="@+id/ethelthcharityEmail"
         android:layout_width="379dp"
         android:layout_height="58dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:background="#F9FAFA"
+        android:background="#FAFAFA"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:text="Email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etfoodcharityContact" />
+        app:layout_constraintTop_toBottomOf="@+id/ethelthcharityContact" />
 
     <EditText
-        android:id="@+id/etfoodcharityContact"
+        android:id="@+id/ethelthcharityContact"
         android:layout_width="377dp"
         android:layout_height="48dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:background="#FEFEFE"
+        android:background="#FBFBFB"
         android:ems="10"
         android:inputType="phone"
         android:text="Phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.427"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etfoodcharityAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/ethelthcharityAddress" />
 
     <EditText
-        android:id="@+id/etfoodcharityAddress"
+        android:id="@+id/ethelthcharityAddress"
         android:layout_width="385dp"
         android:layout_height="44dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:background="#FEFEFE"
+        android:background="#FCFCFC"
         android:ems="10"
         android:inputType="textPostalAddress"
         android:text="Address"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.384"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etfoodcharityName" />
+        app:layout_constraintTop_toBottomOf="@+id/ethelthcharityName" />
 
     <!--    <EditText-->
     <!--        android:id="@+id/editTextTextPersonName5"-->
@@ -109,19 +112,19 @@
     <!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />-->
 
     <EditText
-        android:id="@+id/etfoodcharityDescription"
-        android:layout_width="379dp"
-        android:layout_height="60dp"
+        android:id="@+id/ethelthcharityDescription"
+        android:layout_width="390dp"
+        android:layout_height="58dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:background="#FEFEFE"
+        android:background="#F9F9F9"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etfoodcharityEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/ethelthcharityEmail" />
 
     <!--    <Button-->
     <!--        android:id="@+id/btn_edu_update_back"-->
@@ -135,9 +138,9 @@
     <!--        app:layout_constraintTop_toBottomOf="@+id/btn_edu_submit" />-->
 
     <Button
-        android:id="@+id/btn_food_submit"
-        android:layout_width="221dp"
-        android:layout_height="56dp"
+        android:id="@+id/btn_helth_submit"
+        android:layout_width="219dp"
+        android:layout_height="50dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
@@ -146,6 +149,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etfoodcharityDescription" />
+        app:layout_constraintTop_toBottomOf="@+id/ethelthcharityDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

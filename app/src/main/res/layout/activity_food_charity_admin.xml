@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#CBDDF2"
     android:backgroundTint="#CBDDF2"
-    tools:context=".Edu_charity_admin">
+    tools:context=".Food_charity_admin">
 
 
     <RelativeLayout
@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="60dp"
-            android:text="Educational Chariti List"
+            android:text="Food Charity List"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold">
@@ -30,9 +30,11 @@
     </RelativeLayout>
 
     <ImageView
-        android:layout_width="89dp"
-        android:layout_height="126dp"
-        android:src="@drawable/baseline_school_24"></ImageView>
+        android:layout_width="110dp"
+        android:layout_height="141dp"
+        android:layout_gravity="center"
+        android:src="@drawable/baseline_fastfood_24"></ImageView>
+
 
     <SearchView
         android:id="@+id/searchView"
@@ -51,14 +53,14 @@
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         android:background="#0097A7"
-        android:backgroundTint="#0096A6"
+        android:backgroundTint="#0097A7"
         android:onClick="createCharity"
         android:src="@drawable/add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_edu_chariti_admin_list"
+        android:id="@+id/rv_food_chariti_admin_list"
         android:layout_width="309dp"
         android:layout_height="402dp"
         android:layout_marginTop="28dp"

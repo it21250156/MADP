@@ -21,6 +21,42 @@
         android:theme="@style/Theme.MADProject"
         tools:targetApi="31">
         <activity
+            android:name=".selected_helth_charity"
+            android:exported="false" />
+        <activity
+            android:name=".update_helth_charity"
+            android:exported="false" />
+        <activity
+            android:name=".selected_admin_helth_charity"
+            android:exported="false" />
+        <activity
+            android:name=".Add_new_helth_chariti"
+            android:exported="false" />
+        <activity
+            android:name=".Helth_charity_admin"
+            android:exported="false" />
+        <activity
+            android:name=".update_food_charity"
+            android:exported="false" />
+        <activity
+            android:name=".Add_new_food_chariti"
+            android:exported="false" />
+        <activity
+            android:name=".selected_admin_food_charity"
+            android:exported="false" />
+        <activity
+            android:name=".Food_charity_admin"
+            android:exported="false" />
+        <activity
+            android:name=".selected_food_charity"
+            android:exported="false" />
+        <activity
+            android:name=".selected_admin_charity"
+            android:exported="false" />
+        <activity
+            android:name=".selected_charity"
+            android:exported="false" />
+        <activity
             android:name=".update_post"
             android:exported="false" />
         <activity
@@ -36,16 +72,17 @@
             android:name=".AdminPostListActivity"
             android:exported="false" />
         <activity
+
             android:name=".update_charity"
             android:exported="false" />
         <activity
-            android:name=".add_new_chariti"
+            android:name=".Add_new_chariti"
             android:exported="false" />
         <activity
-            android:name=".edu_charity_admin"
+            android:name=".Edu_charity_admin"
             android:exported="false" />
         <activity
-            android:name=".charity_admin"
+            android:name=".Charity_admin"
             android:exported="false" />
         <activity
             android:name=".AdminHome"

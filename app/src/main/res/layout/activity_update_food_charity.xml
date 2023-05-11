@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CADCF1"
-    tools:context=".update_charity">
+    android:background="#CBDDF2"
+    tools:context=".update_food_charity">
+
 
     <RelativeLayout
         android:id="@+id/relativeLayout2"
@@ -27,10 +28,13 @@
         </TextView>
     </RelativeLayout>
 
+
     <ImageView
-        android:layout_width="69dp"
-        android:layout_height="128dp"
-        android:src="@drawable/baseline_school_24"></ImageView>
+        android:layout_width="75dp"
+        android:layout_height="126dp"
+        android:layout_gravity="center"
+        android:src="@drawable/baseline_fastfood_24"></ImageView>
+
 
 
     <EditText
@@ -40,25 +44,26 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:background="#FDFDFD"
+        android:background="#FEFEFE"
+        android:backgroundTint="#FEFEFE"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text=" Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
 
     <EditText
         android:id="@+id/etfoodcharityEmail"
-        android:layout_width="379dp"
-        android:layout_height="58dp"
+        android:layout_width="387dp"
+        android:layout_height="53dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:background="#F9FAFA"
+        android:background="#FEFEFE"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="Email"
+        android:text=" Email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etfoodcharityContact" />
@@ -73,27 +78,11 @@
         android:background="#FEFEFE"
         android:ems="10"
         android:inputType="phone"
-        android:text="Phone"
+        android:text=" Phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.427"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etfoodcharityAddress" />
-
-    <EditText
-        android:id="@+id/etfoodcharityAddress"
-        android:layout_width="385dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:background="#FEFEFE"
-        android:ems="10"
-        android:inputType="textPostalAddress"
-        android:text="Address"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.384"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etfoodcharityName" />
 
     <!--    <EditText-->
     <!--        android:id="@+id/editTextTextPersonName5"-->
@@ -109,16 +98,31 @@
     <!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />-->
 
     <EditText
-        android:id="@+id/etfoodcharityDescription"
-        android:layout_width="379dp"
-        android:layout_height="60dp"
+        android:id="@+id/etfoodcharityAddress"
+        android:layout_width="385dp"
+        android:layout_height="44dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="#FEFEFE"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:text=" Address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etfoodcharityName" />
+
+    <EditText
+        android:id="@+id/etfoodcharityDescription"
+        android:layout_width="382dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:background="#FEFEFE"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Description"
+        android:text=" Description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etfoodcharityEmail" />
@@ -136,8 +140,8 @@
 
     <Button
         android:id="@+id/btn_food_submit"
-        android:layout_width="221dp"
-        android:layout_height="56dp"
+        android:layout_width="233dp"
+        android:layout_height="53dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"

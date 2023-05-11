@@ -27,13 +27,44 @@ class Charities : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_charities, container, false)
         val eduBtn : Button = view.findViewById(R.id.btn_chari_view1)
+        val foodBtn : Button = view.findViewById(R.id.btn_chari_view2)
+        val helthBtn : Button = view.findViewById(R.id.btn_chari_view3)
 
         eduBtn.setOnClickListener {
-            val fragment = educational_charity_list()
+            val fragment = Educational_charity_list()
             val transaction = fragmentManager?.beginTransaction()
             transaction?.replace(R.id.fl_nav,fragment)?.commit()
         }
 
+        eduBtn.setOnClickListener {
+            val fragment = Educational_charity_list()
+            val transaction = fragmentManager?.beginTransaction()
+            transaction?.replace(R.id.fl_nav,fragment)?.commit()
+        }
+
+        foodBtn.setOnClickListener {
+            val fragment = Food_charity_list()
+            val transaction = fragmentManager?.beginTransaction()
+            transaction?.replace(R.id.fl_nav,fragment)?.commit()
+        }
+
+        foodBtn.setOnClickListener {
+            val fragment = Food_charity_list()
+            val transaction = fragmentManager?.beginTransaction()
+            transaction?.replace(R.id.fl_nav,fragment)?.commit()
+        }
+
+        helthBtn.setOnClickListener {
+            val fragment = Helth_charity_list()
+            val transaction = fragmentManager?.beginTransaction()
+            transaction?.replace(R.id.fl_nav,fragment)?.commit()
+        }
+
+        helthBtn.setOnClickListener {
+            val fragment = Helth_charity_list()
+            val transaction = fragmentManager?.beginTransaction()
+            transaction?.replace(R.id.fl_nav,fragment)?.commit()
+        }
         return view
     }
 
