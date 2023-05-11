@@ -3,6 +3,7 @@ package com.example.madproject
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.InputType
 import android.view.View
 import android.widget.*
 import com.google.firebase.database.DatabaseReference
@@ -29,6 +30,8 @@ class Add_new_chariti : AppCompatActivity() {
         charityemail = findViewById(R.id.edtText_admin_char_email)
         charitydescription = findViewById(R.id.edtText_admin_char_description)
         btnaddcharity = findViewById(R.id.btn_btn_admin_add_char)
+
+        charitycontact.inputType = InputType.TYPE_CLASS_NUMBER or InputType.TYPE_NUMBER_FLAG_DECIMAL
 
         dbRef = FirebaseDatabase.getInstance().getReference("New charity")
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Add_new_chariti">
+    tools:context=".Add_new_food_chariti">
 
     <RelativeLayout
         android:id="@+id/relativeLayout2"
@@ -27,9 +27,11 @@
     </RelativeLayout>
 
     <ImageView
-        android:layout_width="106dp"
-        android:layout_height="145dp"
-        android:src="@drawable/baseline_school_24"></ImageView>
+        android:layout_width="101dp"
+        android:layout_height="147dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:src="@drawable/baseline_health_and_safety_24"></ImageView>
 
 
     <LinearLayout
@@ -47,11 +49,11 @@
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
             android:text="Name"
-            android:textColor="#0A1551"
+            android:textColor="@color/blue3"
             android:textStyle="bold"></TextView>
 
         <EditText
-            android:id="@+id/edtText_admin_CharName"
+            android:id="@+id/edtText_admin_helth_CharName"
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:background="@drawable/customer_edittext"
@@ -81,15 +83,15 @@
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
             android:text="Address"
-            android:textColor="#0A1551"
+            android:textColor="@color/blue3"
             android:textStyle="bold"></TextView>
 
         <EditText
-            android:id="@+id/edtText_admin_char_address"
+            android:id="@+id/edtText_admin_helth_char_address"
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:background="@drawable/customer_edittext"
-            android:backgroundTint="#FDFDFD"
+            android:backgroundTint="#FEFEFE"
             android:drawablePadding="8dp"
             android:inputType="text"
             android:padding="8dp"
@@ -101,15 +103,15 @@
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
             android:text="Contact Number"
-            android:textColor="#0A1551"
+            android:textColor="@color/blue3"
             android:textStyle="bold"></TextView>
 
         <EditText
-            android:id="@+id/edtText_admin_char_contact"
+            android:id="@+id/edtText_admin_helth_char_contact"
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:background="@drawable/customer_edittext"
-            android:backgroundTint="#FCFCFC"
+            android:backgroundTint="#FEFEFE"
             android:drawablePadding="8dp"
             android:inputType="text"
             android:padding="8dp"
@@ -121,15 +123,15 @@
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
             android:text="Email"
-            android:textColor="#0A1551"
+            android:textColor="@color/blue3"
             android:textStyle="bold"></TextView>
 
         <EditText
-            android:id="@+id/edtText_admin_char_email"
+            android:id="@+id/edtText_admin_helth_char_email"
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:background="@drawable/customer_edittext"
-            android:backgroundTint="#FDFDFD"
+            android:backgroundTint="#FEFEFE"
             android:drawablePadding="8dp"
             android:inputType="text"
             android:padding="8dp"
@@ -141,15 +143,15 @@
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
             android:text="Description"
-            android:textColor="#0A1551"
+            android:textColor="@color/blue3"
             android:textStyle="bold"></TextView>
 
         <EditText
-            android:id="@+id/edtText_admin_char_description"
+            android:id="@+id/edtText_admin_helth_char_description"
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:background="@drawable/customer_edittext"
-            android:backgroundTint="#FDFDFD"
+            android:backgroundTint="#FEFEFE"
             android:drawablePadding="8dp"
             android:inputType="text"
             android:padding="8dp"
@@ -161,11 +163,11 @@
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
             android:text="Upload Image"
-            android:textColor="#0A1551"
+            android:textColor="@color/blue3"
             android:textStyle="bold"></TextView>
 
         <ImageView
-            android:id="@+id/iv_admin_char_img"
+            android:id="@+id/iv_admin_food_char_img"
             android:layout_width="70dp"
             android:layout_height="50dp"
             app:layout_constraintStart_toEndOf="@+id/textView13"
@@ -174,14 +176,14 @@
 
 
         <Button
-            android:id="@+id/btn_btn_admin_add_char"
+            android:id="@+id/btn_btn_admin_add_helth_char"
             android:layout_width="@dimen/btnWidth"
-            android:layout_height="@dimen/btnHeight"
+            android:layout_height="62dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:backgroundTint="@color/blue3"
             android:onClick="backToCharities"
-            android:text="Add Charity"
+            android:text="Add Health Charity"
             android:textSize="14sp">
 
         </Button>

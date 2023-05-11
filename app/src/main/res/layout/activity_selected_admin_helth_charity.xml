@@ -6,8 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#CBDDF2"
-    android:label="Select Charity"
-    tools:context=".selected_charity">
+    android:backgroundTint="#CBDDF2"
+    android:label="Select Admin Helth Charity"
+    tools:context=".selected_admin_food_charity">
 
 
     <RelativeLayout
@@ -22,7 +23,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="60dp"
-            android:text="Selected Educational Charity"
+            android:text="Selected Health Care Charity"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold">
@@ -30,34 +31,40 @@
         </TextView>
     </RelativeLayout>
 
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="122dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:src="@drawable/baseline_health_and_safety_24"></ImageView>
 
     <Button
-        android:id="@+id/btn_donate"
+        android:id="@+id/btn_helth_update"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Donate"
-        app:layout_constraintEnd_toStartOf="@+id/btn_backto_chari_list"
+        android:text="Update"
+        app:layout_constraintEnd_toStartOf="@+id/btn_helth_delete"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linearLayout" />
 
     <Button
-        android:id="@+id/btn_backto_chari_list"
+        android:id="@+id/btn_helth_delete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Back"
+        android:text="Delete"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_donate"
+        app:layout_constraintStart_toEndOf="@+id/btn_helth_delete"
         app:layout_constraintTop_toBottomOf="@id/linearLayout" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="380dp"
-        android:layout_height="301dp"
-        android:layout_marginTop="48dp"
+        android:layout_width="393dp"
+        android:layout_height="286dp"
+        android:layout_marginTop="40dp"
         android:background="#FEFEFE"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -99,7 +106,7 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/charityId"
+                    android:id="@+id/helthcharityId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -147,7 +154,7 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/charityName"
+                    android:id="@+id/helthcharityName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -199,7 +206,7 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/charitiaddress"
+                    android:id="@+id/helthcharitiaddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -253,7 +260,7 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/charityContact"
+                    android:id="@+id/helthcharityContact"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -307,7 +314,7 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/charityEmail"
+                    android:id="@+id/helthcharityEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -361,7 +368,7 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/charityDescription"
+                    android:id="@+id/helthcharityDescription"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

@@ -1,6 +1,5 @@
 package com.example.madproject
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -110,13 +109,13 @@ class selected_admin_charity : AppCompatActivity() {
 
         mDialog.setView(mDialogView)
 
-        val charityName = mDialogView.findViewById<EditText>(R.id.etcharityName)
-        val charityAddress = mDialogView.findViewById<EditText>(R.id.etcharityAddress)
-        val charityContact = mDialogView.findViewById<EditText>(R.id.etcharityContact)
-        val charityEmail = mDialogView.findViewById<EditText>(R.id.etcharityEmail)
-        val charityDescription = mDialogView.findViewById<EditText>(R.id.etcharityDescription)
+        val charityName = mDialogView.findViewById<EditText>(R.id.etfoodcharityName)
+        val charityAddress = mDialogView.findViewById<EditText>(R.id.etfoodcharityAddress)
+        val charityContact = mDialogView.findViewById<EditText>(R.id.etfoodcharityContact)
+        val charityEmail = mDialogView.findViewById<EditText>(R.id.etfoodcharityEmail)
+        val charityDescription = mDialogView.findViewById<EditText>(R.id.etfoodcharityDescription)
 
-        val btn_edu_update = mDialogView.findViewById<Button>(R.id.btn_edu_submit)
+        val btn_edu_update = mDialogView.findViewById<Button>(R.id.btn_food_submit)
 
         charityName.setText(intent.getStringExtra("charityName").toString())
         charityAddress.setText(intent.getStringExtra("charityAddress").toString())
@@ -124,7 +123,7 @@ class selected_admin_charity : AppCompatActivity() {
         charityEmail.setText(intent.getStringExtra("charityEmail").toString())
         charityDescription.setText(intent.getStringExtra("charityDescription").toString())
 
-        mDialog.setTitle("Updating $charityName Record")
+        //mDialog.setTitle("Updating $charityName Record")
 
         val alertDialog = mDialog.create()
         alertDialog.show()

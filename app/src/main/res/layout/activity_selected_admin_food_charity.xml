@@ -6,9 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#CBDDF2"
-    android:label="Select Charity"
-    tools:context=".selected_charity">
-
+    android:backgroundTint="#CBDDF2"
+    android:label="Select Admin Food Charity"
+    tools:context=".selected_admin_food_charity">
 
     <RelativeLayout
         android:id="@+id/relativeLayout2"
@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="60dp"
-            android:text="Selected Educational Charity"
+            android:text="Selected Food Charity"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold">
@@ -31,36 +31,43 @@
     </RelativeLayout>
 
 
+    <ImageView
+        android:layout_width="93dp"
+        android:layout_height="136dp"
+        android:layout_gravity="center"
+        android:src="@drawable/baseline_fastfood_24"></ImageView>
+
     <Button
-        android:id="@+id/btn_donate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btn_food_update"
+        android:layout_width="127dp"
+        android:layout_height="42dp"
         android:layout_marginTop="30dp"
-        android:text="Donate"
-        app:layout_constraintEnd_toStartOf="@+id/btn_backto_chari_list"
+        android:text="Update"
+        app:layout_constraintEnd_toStartOf="@+id/btn_food_delete"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linearLayout" />
 
     <Button
-        android:id="@+id/btn_backto_chari_list"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Back"
+        android:id="@+id/btn_food_delete"
+        android:layout_width="116dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:text="Delete"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_donate"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toEndOf="@+id/btn_food_delete"
         app:layout_constraintTop_toBottomOf="@id/linearLayout" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="380dp"
-        android:layout_height="301dp"
-        android:layout_marginTop="48dp"
+        android:layout_width="395dp"
+        android:layout_height="288dp"
+        android:layout_marginTop="28dp"
         android:background="#FEFEFE"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
 
@@ -99,7 +106,7 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/charityId"
+                    android:id="@+id/foodcharityId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -147,7 +154,7 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/charityName"
+                    android:id="@+id/foodcharityName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -199,7 +206,7 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/charitiaddress"
+                    android:id="@+id/foodcharitiaddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -253,7 +260,7 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/charityContact"
+                    android:id="@+id/foodcharityContact"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -307,7 +314,7 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/charityEmail"
+                    android:id="@+id/foodcharityEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -361,7 +368,7 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/charityDescription"
+                    android:id="@+id/foodcharityDescription"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

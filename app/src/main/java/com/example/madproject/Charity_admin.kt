@@ -35,15 +35,15 @@ class Charity_admin : AppCompatActivity() {
             startActivity(intent1)
         }
 
-        //button11.setOnClickListener {
-           // val intent1 = Intent (this, Edu_charity_admin::class.java)
-            //startActivity(intent)
-        //}
+        button11.setOnClickListener {
+            val intent2 = Intent (this, Food_charity_admin::class.java)
+            startActivity(intent2)
+        }
 
-        //button13.setOnClickListener {
-         //   val intent1 = Intent (this, Edu_charity_admin::class.java)
-          //  startActivity(intent)
-      //  }
+        button13.setOnClickListener {
+            val intent3 = Intent (this, Helth_charity_admin::class.java)
+            startActivity(intent3)
+        }
     }
 
 
