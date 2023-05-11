@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:background="@color/blue2"
     android:gravity="center"
-    tools:context=".LoginActivity2">
+    tools:context=".LoginActivity2"
+    android:orientation="horizontal">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -23,17 +24,30 @@
             android:orientation="vertical"
             android:padding="24dp">
 
-            <TextView
-                android:id="@+id/tv_login"
+            <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:text="Login"
-                android:textAlignment="center"
-                android:textColor="@color/blue3"
-                android:textSize="30dp"
-                android:textStyle="bold" />
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="103dp"
+                    android:layout_height="90dp"
+                    app:srcCompat="@drawable/logo2" />
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Login"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/blue3"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
 
             <EditText
                 android:id="@+id/edtText_login_email"
