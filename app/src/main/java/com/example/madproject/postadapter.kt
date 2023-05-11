@@ -31,6 +31,7 @@ class postadapter (private val postlist:ArrayList<admipostmodel>):
     override fun onBindViewHolder(holder:ViewHolder, position: Int) {
         val currentpost=postlist[position]
         holder.tvadminpos.text=currentpost.title
+       // holder.useradminpos.text=currentpost.title
     }
 
 
@@ -40,6 +41,7 @@ class postadapter (private val postlist:ArrayList<admipostmodel>):
     }
     class ViewHolder(itemView: View,clickListener: OnItemClickListener): RecyclerView.ViewHolder(itemView) {
             val tvadminpos:TextView=itemView.findViewById(R.id.tv_admin_post1)
+        //val useradminpos:TextView=itemView.findViewById(R.id.usertitle)
         init {
             itemView.setOnClickListener{
                 clickListener.onItemclick(adapterPosition)

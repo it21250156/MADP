@@ -55,6 +55,10 @@
             android:exported="false" />
         <activity
             android:name=".selected_charity"
+            android:name=".userread"
+            android:exported="false" />
+        <activity
+            android:name=".postuser"
             android:exported="false" />
         <activity
             android:name=".update_post"
