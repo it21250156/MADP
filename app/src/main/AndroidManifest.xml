@@ -54,8 +54,11 @@
             android:name=".selected_admin_charity"
             android:exported="false" />
         <activity
-            android:name=".selected_charity"
+
             android:name=".userread"
+            android:exported="false" />
+        <activity
+            android:name=".selected_charity"
             android:exported="false" />
         <activity
             android:name=".postuser"
