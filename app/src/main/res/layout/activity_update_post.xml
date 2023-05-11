@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="60dp"
-            android:text="Create a New Post"
+            android:text="Update post"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="italic">
@@ -37,6 +37,7 @@
 
 
         <TextView
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
@@ -45,7 +46,7 @@
             android:textStyle="bold"></TextView>
 
         <EditText
-            android:id="@+id/edtText_admin_postTitle"
+            android:id="@+id/uptitle"
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:background="@drawable/customer_edittext"
@@ -63,7 +64,7 @@
             android:textStyle="bold"></TextView>
 
         <EditText
-            android:id="@+id/edtText_admin_postChaName"
+            android:id="@+id/cnameup"
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:background="@drawable/customer_edittext"
@@ -83,7 +84,7 @@
             android:textStyle="bold"></TextView>
 
         <EditText
-            android:id="@+id/edtText_admin_postDes"
+            android:id="@+id/desup"
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:background="@drawable/customer_edittext"
@@ -106,36 +107,24 @@
             android:layout_width="70dp"
             android:layout_height="50dp"
             app:layout_constraintStart_toEndOf="@+id/textView13"
-            app:layout_constraintTop_toBottomOf="@+id/etfoodcharityDescription"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6"
             app:srcCompat="@drawable/baseline_image_24" />
 
 
         <Button
-            android:id="@+id/btn_btn_admin_add_post"
+            android:id="@+id/btnup"
             android:layout_width="@dimen/btnWidth"
             android:layout_height="@dimen/btnHeight"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:backgroundTint="@color/blue3"
-            android:text="Create Post"
+            android:text="Update"
             android:textSize="14sp">
-<!--            android:onClick="backToPosts">-->
+            <!--            android:onClick="backToPosts">-->
 
 
         </Button>
 
-        <Button
-            android:id="@+id/btn_btn_admin_post_cancel"
-            android:layout_width="@dimen/btnWidth"
-            android:layout_height="@dimen/btnHeight"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/blue2"
-            android:text="Cancel"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            android:onClick="backToPosts">
-
-        </Button>
 
 
     </LinearLayout>

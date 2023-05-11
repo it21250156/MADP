@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MAD Project</string>
+    <string name="app_name">OneClickDonate</string>
     <string name="btnResetPW">Reset Password</string>
     <string name="edt_mobileNo">0763302134</string>
     <string name="tv_mobileNo">Mobile Number</string>
