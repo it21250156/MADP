@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "761605390850",
-    "project_id": "mad-project-79771",
-    "storage_bucket": "mad-project-79771.appspot.com"
+    "project_number": "340216149601",
+    "firebase_url": "https://mad-project-devdynomos-default-rtdb.firebaseio.com",
+    "project_id": "mad-project-devdynomos",
+    "storage_bucket": "mad-project-devdynomos.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:761605390850:android:91e4876898d37efc92dd1b",
+        "mobilesdk_app_id": "1:340216149601:android:90502b41d762986f371c20",
         "android_client_info": {
           "package_name": "com.example.madproject"
         }
       },
       "oauth_client": [
         {
-          "client_id": "761605390850-tcgctt4gtpoqn6bsvp42mksvkguce7nt.apps.googleusercontent.com",
+          "client_id": "340216149601-dgd8ur0o5gj4eigniuvnvoq1s3s3dsvv.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDo-T-nlk51TssyL-kgYTNbaV8nx0AcjUk"
+          "current_key": "AIzaSyAA-fGJmT9QbHCNCvOvM2EXNl1Wkq5Fhy8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "761605390850-tcgctt4gtpoqn6bsvp42mksvkguce7nt.apps.googleusercontent.com",
+              "client_id": "340216149601-dgd8ur0o5gj4eigniuvnvoq1s3s3dsvv.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

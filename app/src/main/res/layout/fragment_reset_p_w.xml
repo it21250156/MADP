@@ -43,61 +43,12 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="16dp"
-                android:text="Current Password"
-                android:textColor="@color/blue1"
-                android:textStyle="bold"></TextView>
-
-            <EditText
-                android:id="@+id/edtText_reset_currpw"
+                android:id="@+id/tv_resetpw_desc"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:background="@drawable/customer_edittext"
-                android:drawablePadding="8dp"
-                android:inputType="textPassword"
-                android:padding="8dp"
-                android:textColor="@color/blue1"
-                android:textColorHighlight="@color/black" />
-
-            <TextView
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingTop="16dp"
-                android:text="New Password"
-                android:textColor="@color/blue1"
-                android:textStyle="bold"></TextView>
-
-            <EditText
-                android:id="@+id/edtText_reset_newpw"
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:background="@drawable/customer_edittext"
-                android:drawablePadding="8dp"
-                android:inputType="textPassword"
-                android:padding="8dp"
-                android:textColor="@color/blue1"
-                android:textColorHighlight="@color/black" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="16dp"
-                android:text="Confirm New Password"
-                android:textColor="@color/blue1"
-                android:textStyle="bold"></TextView>
-
-            <EditText
-                android:id="@+id/edtText_reset_confirmnewpw"
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:background="@drawable/customer_edittext"
-                android:drawablePadding="8dp"
-                android:inputType="textPassword"
-                android:padding="8dp"
-                android:textColor="@color/blue1"
-                android:textColorHighlight="@color/black" />
+                android:text="We'll send an email to your email. Follow the instructions to reset your password."
+                android:textColor="@color/blue3"
+                android:textStyle="bold|italic" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -106,12 +57,12 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/btn_savePW"
+                    android:id="@+id/btn_sendEmail"
                     android:layout_width="@dimen/btnWidth"
                     android:layout_height="@dimen/btnHeight"
                     android:layout_marginTop="30dp"
                     android:backgroundTint="@color/blue3"
-                    android:text="Save New Password"
+                    android:text="Send the Email"
                     android:textSize="12sp">
 
                 </Button>
