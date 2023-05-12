@@ -67,6 +67,7 @@ class Add_new_chariti : AppCompatActivity() {
         }
         if (charityDescription.isEmpty()) {
             charitydescription.error = "please enter description "
+            return
         }
 
         val charityID = dbRef.push().key!!

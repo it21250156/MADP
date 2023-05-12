@@ -66,6 +66,7 @@ class Add_new_helth_chariti : AppCompatActivity() {
         }
         if (helthcharityDescription.isEmpty()) {
             helthcharitydescription.error = "please enter description "
+            return
         }
 
         val helthcharityID = dbRef.push().key!!

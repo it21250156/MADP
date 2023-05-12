@@ -66,6 +66,7 @@ class Add_new_food_chariti : AppCompatActivity() {
         }
         if (foodcharityDescription.isEmpty()) {
             foodcharitydescription.error = "please enter description "
+            return
         }
 
         val foodcharityID = dbRef.push().key!!
